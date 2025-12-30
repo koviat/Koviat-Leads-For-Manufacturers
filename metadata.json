@@ -1,0 +1,8 @@
+{
+  "name": "Koviat Leads For Manufacturers",
+  "description": "A high-converting, professional B2B lead generation platform specifically designed for US-based manufacturing, fabrication, and industrial service companies.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

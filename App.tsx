@@ -16,8 +16,8 @@ import ChatWidget from './components/ChatWidget';
 const BookingModal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
-  // USER UPDATED: Specific Meetn event link for bookings
-  const calendarUrl = "https://meetn.com/Event?ID=2e4dfdb29b";
+  // USER UPDATED: Specific Meetn event link for bookings (Updated to ID=468d751414)
+  const calendarUrl = "https://meetn.com/Event?ID=468d751414";
 
   return (
     <div className="fixed inset-0 z-[110] flex items-center justify-center p-4 sm:p-6 lg:p-8">

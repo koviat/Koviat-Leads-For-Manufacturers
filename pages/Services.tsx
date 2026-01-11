@@ -51,6 +51,10 @@ const ServiceSection: React.FC<{
 );
 
 const Services: React.FC = () => {
+  const openBooking = () => {
+    window.dispatchEvent(new CustomEvent('openBooking'));
+  };
+
   return (
     <div>
       {/* Intro */}
@@ -125,12 +129,12 @@ const Services: React.FC = () => {
       <section className="py-24 bg-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-blue-950 mb-8 uppercase tracking-tight">Ready for a Better Lead Flow?</h2>
-          <a 
-            href="/#/contact" 
+          <button 
+            onClick={openBooking}
             className="inline-block bg-blue-900 text-white px-10 py-5 rounded-sm text-lg font-bold hover:bg-blue-800 transition-all shadow-lg border-b-4 border-amber-500"
           >
-            Request a Custom Strategy Proposal
-          </a>
+            Book Your Free Strategy Call
+          </button>
         </div>
       </section>
     </div>
